@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ball animation</title>
+    <style>
+        .ball{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            /* border: 2px solid white; */
+            background-color: lightcoral;
+            position: absolute;
+            animation-name:bounce , move;
+            animation-duration: 3s ;
+            animation-timing-function:ease-in-out;
+            animation-iteration-count: infinite;
+        }
+        @keyframes bounce {
+            0% { bottom: 0; 
+            }
+            15% 
+            { bottom: 100px; 
+
+            } /* First high */
+            30% { bottom: 0;
+
+             } /* First low */
+            50% { bottom: 150px;
+
+             } /*  middle high */
+            70% { bottom: 0; 
+
+            } /* Second low */
+            85% { bottom: 100px; 
+
+            } /* Last high */
+            100%{
+                bottom: 0;
+            }
+        }
+
+        @keyframes move {
+            0% { left: 0; }  /* starts from left */
+            30% { left: 150px; }/* moves 150px */
+            50% { left: 200px; }/* moves  */
+            70% { left: 300px; }/*  */
+            100% { left: 400px; }/*  */
+            
+        }
+        .container{
+            
+            position: relative;
+            width: 50vw;
+            height: 200px;
+            margin-top: 200px;
+            margin-left: 300px;
+            box-shadow: 1px 1px 5px 5px white;
+            
+            
+        }
+        
+        
+
+        
+            
+        
+
+
+    </style>
+</head>
+<body style="background-color: black;">
+    <div class="container">
+        <div class="ball">
+
+        </div>
+    </div>
+</body>
+</html>
